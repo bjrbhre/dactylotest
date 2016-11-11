@@ -272,9 +272,28 @@ function aff_result() // replacer les undefined par des espaces insécables (pou
     document.getElementById("resultats").innerHTML = "Vous avez fait "+nb_err+" erreurs."+txt;
 	document.getElementById("rd_txt").innerHTML = "";
 
+  document.onkeypress = listen_keyboard_after_results;
 }
 
 function reinit_variables() {
   nb_err = 0;
   txt_frap = new Array();
+}
+
+function listen_keyboard_after_results(e) {
+  e = e || window.event;
+  var charCode = (typeof e.which == "number") ? e.which : e.keyCode;
+  // var charValue = Strin.fromCharCode(charCode)
+  // alert("Character typed: " + charValue + '[' + charCode + ']');
+
+  if (charCode != 13) {
+    return;
+  }
+
+  document.onkeypress = null;
+  if (nb_err <= 5) {
+    change_exo('+')
+  } else {
+    change_exo('=')
+  }
 }
