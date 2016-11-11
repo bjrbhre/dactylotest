@@ -258,6 +258,8 @@ function color_car(a)
 
 function aff_result() // replacer les undefined par des espaces insécables (pour l'affichage)
 {
+  document.getElementById("txt").blur();
+
   var txt="";
   if(nb_err > 5)
     txt = " Il semblerait que vous ne maîtrisez pas encore totalement cet exercice, vous pouvez le recommencer si vous le souhaitez.";
