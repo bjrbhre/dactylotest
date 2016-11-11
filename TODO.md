@@ -1,0 +1,2 @@
+- [ ] Fix error "Cannot read property join of undefined" on `fonctions_texte.js:198`
+- [ ] Use cookies to remember options
