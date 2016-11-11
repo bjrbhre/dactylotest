@@ -15,6 +15,8 @@ var vies = 2;
 
 function change_exo(a)
 {
+	reinit_variables();
+
   if (a=="+" && exo_en_cours<exo.length-1)
     exo_en_cours++;
   else if (a=="-" && exo_en_cours>0)

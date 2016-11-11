@@ -270,6 +270,9 @@ function aff_result() // replacer les undefined par des espaces insécables (pou
     document.getElementById("resultats").innerHTML = "Vous avez fait "+nb_err+" erreurs."+txt;
 	document.getElementById("rd_txt").innerHTML = "";
 
-	nb_err = 0;
-	txt_frap = new Array();    // ré-init variable
+}
+
+function reinit_variables() {
+  nb_err = 0;
+  txt_frap = new Array();
 }
