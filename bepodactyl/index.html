@@ -3,6 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Bépodactyl : Exercices d'apprentissage de la disposition BÉPO</title>
+<script type="text/javascript" src="js/keyboards.js"></script>
+<script type="text/javascript" src="js/dashboard.js"></script>
 <script type="text/javascript" src="js/fonctions_texte.js"></script>
 <script type="text/javascript" src="js/functions_page.js"></script>
 <script type="text/javascript" src="js/exo.js"></script>
@@ -30,16 +32,16 @@
 		<input type="button" id="but_+" onclick="change_exo('+')" value="+"/>
 		<input type="button" id="but_+" onclick="change_exo('=')" value="Recommencer"/>
 		<input type="button" onClick="view_options('block')" value="Options" />
-		<input type="button" onClick="view_help('block')" value="?" />		
+		<input type="button" onClick="view_help('block')" value="?" />
 	 </p>
 	<br/>
-       
+
 	<div id="aff_kb"></div>
 
 
 	<hr/>
 	<div style="width:100%"><strong style="float:left;width:65%">Exercice nº<span id="exo_nb"></span></strong><span id="nb_vies" style="float:left;text-align:right;width:20%"></span></div>
-	<br/><br/>	
+	<br/><br/>
 	<div class="ici" id="ici">
 		<p class="rd_txt" id="rd_txt"><span style="color:red"><strong>Javascript doit être activé ! Vous pouvez le faire en modifiant les préférences de votre navigateur. Si vous ne savez pas comment faire, consultez l'aide de celui-ci.</strong></span></p>
 		<p>>> <input type="text" onkeyup="test(event)" onkeydown="" id="txt" class="txt"/></p>
@@ -56,7 +58,7 @@
   <p style="margin-bottom:10px"><strong>Options</strong><p>
   <p>
     <!--input type="checkbox" id="val_kb" checked="checked" onChange="aff_kb(this.checked)" /> Afficher l’image du clavier<br/-->
-    
+
     Image du clavier<br/>
     <input type="radio" name="type_kb" id="type_kb" checked="checked" value="kb_decal"       onChange="type_kb=this.value;aff_kb(true)"  /> Clavier décalé<br/>
     <input type="radio" name="type_kb" id="type_kb"                   value="kb_typematrix"  onChange="type_kb=this.value;aff_kb(true)"  /> Typematrix<br/>
@@ -96,4 +98,4 @@
 
 </body>
 </html>
-	
+
